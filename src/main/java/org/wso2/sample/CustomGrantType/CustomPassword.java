@@ -26,7 +26,6 @@ public class CustomPassword extends PasswordGrantHandler {
         } catch (InvalidOAuthClientException e) {
             e.printStackTrace();
         }
-
         OAuth2AccessTokenRespDTO tokenRespDTO =  super.issue(tokReqMsgCtx);
 
         return tokenRespDTO;
